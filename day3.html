@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>WEB_CSS</title>
+    <meta charset="utf-8">
+</head>
+
+<style>
+    h1
+    {    font-size:100px;    }
+</style>
+
+<body>
+
+<header> 
+    <h1><a href="index.html">WEB</a></h1>
+</header>
+
+<nav>
+<!-- 버튼 위치
+버튼 어떻게?
+버튼 클릭 햇을떄 js가 실행되게 어떻게 하지?
+body 태그를 어떻게 js로 선택하지
+선택한 body태그에 style을 어떻게 바꾸지
+background-color, color를 어떻게 넣지 -->
+
+<script>
+
+    var bodyTag= document.querySelector('body');
+</script>
+   
+
+    <input type="button" value="검정색" onclick="
+    
+var links= document.querySelectorAll('a');
+
+        if(this.value==='검정색')
+        {
+            bodyTag.style.backgroundColor='black';
+            bodyTag.style.color='white';
+            this.value='하늘색';
+            var i=0;
+            while(i<links.length )
+            {
+                links[i].style.color='red';
+                i++;
+            }
+                    
+        }else 
+        {
+            bodyTag.style.backgroundColor='powderblue';
+            bodyTag.style.color='white';
+            this.value='검정색';
+            var i=0; 
+             while(i<links.length )
+             {
+                 links[i].style.color='purple';
+                 i++;
+             }
+        }
+     "> 
+     
+   <ol>
+        <li><a href="index1.html">html</a></li>
+        <li><a href="index2.html">css</a></li>
+        <li><a href="index3.html">javascript</a></li>
+    </ol>
+</nav>
+    <h2>css</h2>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident similique architecto laudantium? Hic dolorem dicta minima, ipsum eaque nobis commodi ipsa aliquid adipisci corporis. At quod molestiae officiis vitae soluta.
+
+
+</body>
+</htm

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HAHAHA</title>
+    <meta charset="utf-8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-sha256/0.9.0/sha256.js" integrity="sha256-bbNosz5JlGdezcH8vxdbJ+b/hVKQTTRxrb+kM13pxc0=" crossorigin="anonymous"></script>
+
+ <script>
+     function login(){
+        var password='0ffe1abd1a08215353c233d6e009613e95eec4253832a761af28ff37ac5a150c';
+        var inputPassword = prompt('비번 입력해주세요');
+        
+        if(password===sha256(inputPassword))
+        {
+            var utterance =new SpeechSynthesisUtterance( '이랏샤이마세!');
+            window.speechSynthesis.speak(utterance);
+        }
+        else 
+        {
+            var utterance =new SpeechSynthesisUtterance( '빠가야로!! 몽충이!');
+            window.speechSynthesis.speak(utterance);
+        }
+     }
+ </script>
+  
+</head>
+
+<body>
+
+    <h1><a href="index.html">HAHA</a></h1>
+    <h2>깔깔깔</h2>
+
+    <script>
+        var bodyTag=document.querySelector('body');
+    </script>
+
+    <input type="button" value="login" onclick="
+
+       login();
+
+    ">
+
+
+<input type="button" value="night" onclick="
+bodyTag.style.backgroundColor='black';
+bodyTag.style.color='white';">
+
+<input type="button" value="day" onclick="
+bodyTag.style.backgroundColor='powderblue';
+bodyTag.style.color='black';">
+
+<input type="button" value="night" onclick="
+
+if(this.value==='night')
+    {
+    bodyTag.style.backgroundColor='black';
+    bodyTag.style.color='white';
+    this.value='day';}
+else {
+    bodyTag.style.backgroundColor='powderblue';
+    bodyTag.style.color='black';
+    this.value='night';}
+">
+<input type="button" value="login" onclick="
+login();
+    
+">
+
+
+
+        <ol>
+            <li><a href="index1.html">picture</a></li>
+            <li><a href="index2.html">vidio</a></li>
+            <li><a href="index3.html">link</a></li>
+            
+        </ol>
+
+</body>
+</html>

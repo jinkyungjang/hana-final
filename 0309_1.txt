@@ -1,0 +1,10 @@
+﻿원인(인간)과  결과(컴퓨터)
+
+약속(코드, 소스)
+<application>
+web page
+web site
+
+html 쉽다/가성비가 좋음
+css 
+javascript
