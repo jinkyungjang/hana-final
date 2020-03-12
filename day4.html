@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>day4</title>
+        <meta charset="utf-8">
+
+        <script>
+            // 함수설정 : 랜덤*5=0-5사이의 실수가 출력
+            function MARF(){
+               return Math.floor(Math.random()*5);
+            }
+         </script>
+
+    </head>
+
+    <style>
+        * {    
+            font-family: 'Caveat', cursive;/*구글 폰트를 이용할수 있다*/  
+          }
+        body{
+            background-image:url(https://i.pinimg.com/236x/f5/ed/d7/f5edd76a0807c54c7e88bbd1ea0e828c.jpg);}
+
+
+        h1{
+            color: slategray;
+            border:5px solid red; /*글씨 크기 선 색*/
+            padding-top: 30px; /*위아래 줄 간격*/
+            margin:50px; /*여백*/
+            width: 120px; /*박스의 넓이와 높이*/
+            height: 200px;
+            /*display: inline;화면 크기만큼을 씀*/
+          }
+        a {
+            /*display:block;화면 전체를 씀 예 H1태그 */
+          }
+     
+   </style>
+    
+   <body onclick="
+        var colors=['red','powderblue','green','tomato','black']
+        
+        this.style.backgroundColor=colors[MARF()];
+        this.style.color=colors[MARF()];
+        ">
+
+            <form action="https://www.google.com/search">
+            <!-- <input type="hidden" name="as_sitesearch" value="https://jinkyungjang.github.io/hana-final/"> -->
+            <input type="text" name="q" value="">
+            <input type="color">
+            <input type="submit">
+        </form>
+
+        <h1><a href="index.html">Jinkyung's page 메인화면으로 돌아가기</a></h1>
+        <ol>
+            <li>검색창 만들기(구글로 검색이 넘어가요)</li>
+            <li>stlye 폰트, 색, 여백 설정하기</li>
+            <li>클릭하면 배경과 글자색이 바꾸어요</li>
+        </ol>
+
+    </body>
+</html>
+
